@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #383b43;
+    position: relative;
+}
+
+.heart-con{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ion-icon{
+    color: brown;
+    animation: animation 1.8s ease-in-out infinite;
+    font-size: 50px;
+}
+
+
+@keyframes animation {
+    0%{
+        font-size: 150px; /* Normal ölçü */
+        color: brown;
+    }
+    20%, 40%, 60%, 80%
+    {
+        font-size: 150px; /* Normal ölçü */
+    }
+    100% {
+        font-size: 150px; /* Normal ölçü */
+        color: royalblue;
+    }
+    
+    10% {
+        font-size: 100px; /* Böyümə */
+    }
+    30% {
+        font-size: 150px; /* Bir az kiçilmə */
+    }
+    50% {
+        font-size: 100px; /* Yenidən böyümə */
+    }
+    70% {
+        font-size: 150px; /* Böyümə */
+    }
+    90% {
+        font-size: 100px; /* Yenidən böyümə */
+    }
+}
